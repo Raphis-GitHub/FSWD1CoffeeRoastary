@@ -4,7 +4,7 @@ import path from 'path';
 import { globSync } from 'glob';
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
-const pkg = require('../package.json');
+const pkg = require('../extra/package.json');
 const dirs = pkg['h5bp-configs'].directories;
 
 const expectedFilesInArchiveDir = [`${pkg.name}_v${pkg.version}.zip`];

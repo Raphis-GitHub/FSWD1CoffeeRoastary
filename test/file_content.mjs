@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
-const pkg = require('../package.json');
+const pkg = require('../extra/package.json');
 const dirs = pkg['h5bp-configs'].directories;
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

@@ -52,7 +52,7 @@
   },
   "files": [
     "CHANGELOG.md",
-    "LICENSE.txt",
+    "extra/LICENSE.txt",
     "package.json",
     "dist/",
     "README.md"
