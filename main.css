@@ -32,11 +32,27 @@ header .logo {
     justify-content: center;
 }
 
+header nav {
+    height: 100%;
+    display: flex;
+    align-content: stretch;
+}
+
+header nav span {
+    flex: 1 1 0;
+    height: 100%;
+    padding: 20px 0;
+}
+
 header nav a {
     margin: 0 15px;
     text-decoration: none;
     color: #fff;
     font-size: 18px;
+}
+
+header nav span:hover, header nav span:focus, .active {
+    background: #8C5B3E;
 }
 
 /* Main Section */
@@ -75,7 +91,8 @@ main {
 
 .content .card {
     background-color: #6E432A;
-    border: 1px solid blackS;
+    border: 1px solid black;
+    border-radius: 5px;
     padding: 10px;
     text-align: center;
     color: #fff;
