@@ -75,7 +75,9 @@ main {
 
 .content .card {
     background-color: #6E432A;
-    border: 1px solid blackS;
+    border: 1px solid black;
+    border-radius: 10%;
+
     padding: 10px;
     text-align: center;
     color: #fff;
