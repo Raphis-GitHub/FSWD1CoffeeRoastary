@@ -17,6 +17,8 @@ body {
 
 /* Header */
 header {
+    position: sticky;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,16 +37,22 @@ header .logo {
     justify-content: center;
 }
 
+header h1 {
+    position: relative;
+    left: 5%;
+}
+
 header nav {
     height: 100%;
     display: flex;
-    align-content: stretch;
 }
 
 header nav span {
     flex: 1 1 0;
     height: 100%;
     padding: 20px 0;
+    margin: 0 5px;
+    cursor: pointer;
 }
 
 header nav a {
@@ -60,36 +68,48 @@ header nav span:hover, header nav span:focus, .active {
 
 /* Main Section */
 main {
-    display: flex;
     margin: 20px;
 }
 
 /* Sidebar */
 .sidebar {
     width: 20%;
+    align-self: flex-start;
+    z-index: -1;
+    position: fixed;
+    left: auto;
+    float: left;
     background-color: #8C5B3E;
     padding: 10px;
     border:  1px solid #6E432A;
+    border-radius: 20px;
+    opacity: 0.7;
 }
 
 .sidebar .menu-item {
     padding: 10px;
     background-color: #E5D0B6;
+    opacity: 1;
     margin-bottom: 10px;
     text-align: center;
     border: 1px solid #6E432A;
+    border-radius: 10px;
     cursor: pointer;
 }
 
 /* Content Section */
 .content {
-    width: 80%;
+    width: 78%;
     display: flex;
+    justify-content: space-evenly;
     gap: 20px;
     padding: 10px;
+    border-radius: 20px;
+    float: right;
     flex-wrap: wrap;
-    background-color: #8C5B3E ;
+    background-color: #8C5B3E;
     margin-left: 20px;
+    margin-bottom: 10px;
 }
 
 .content .card {
@@ -112,6 +132,7 @@ main {
 
 /* Footer */
 footer {
+    clear: both;
     display: flex;
     justify-content: space-around;
     background-color: #3E1E13;
@@ -124,12 +145,17 @@ footer .footer-item {
     width: 30%;
     padding: 10px;
     border: 1px solid #6E432A;
+    border-radius: 15px;
     background-color: #8C5B3E;
+}
+
+footer iframe {
+    border-radius: 10px;
 }
 
 footer input {
     margin-top: 10px;
     padding: 5px;
     border: 1px solid #6E432A;
-    border-radius: 3px;
+    border-radius: 5px;
 }
