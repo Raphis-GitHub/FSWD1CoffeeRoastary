@@ -1,0 +1,47 @@
+.roastery-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between rows */
+}
+
+.roastery-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%; /* Adjust as needed for centering */
+    margin: 0 auto; /* Centers the rows horizontally */
+    gap: 20px;
+    flex: 1;
+}
+
+.roastery-type {
+    display: inline-block;
+    flex: 1;
+    text-align: center; /* Ensures image is aligned */
+}
+
+.roastery-type img {
+    border-radius: 10px;
+}
+
+.roastery-description {
+    display: inline-block;
+    flex: 3;
+    background-color: brown;
+    color: white;
+    border-radius: 10px;
+    text-align: left; /* Keeps text aligned left */
+    padding: 20px; /* Adds some space around the text */
+}
+
+/* Reverses the flex order for alternate rows */
+.roastery-item.reversed {
+    flex-direction: row-reverse;
+}

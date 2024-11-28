@@ -105,8 +105,6 @@ aside{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-
-
 }
 
 .card:hover {
@@ -136,7 +134,7 @@ aside{
 footer {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
     padding: 20px;
     background-image:  url('photo-1447933601403-0c6688de566e.jpeg'); /* Path to your image */
     background-size: cover;                /* Make the image cover the entire area */
@@ -171,7 +169,7 @@ footer .footer-item {
 
 footer iframe {
     width: 100%;
-    height: 200px;
+    height: 100%;
     border: none;
     border-radius: 10px;
     z-index: 10;
