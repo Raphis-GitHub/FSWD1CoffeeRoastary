@@ -161,11 +161,12 @@ footer .footer-item {
     border-radius: 10px;
     padding: 20px;
     z-index: 10;
-    background-image: linear-gradient(rgba(211, 211, 211, 0.5), rgba(211, 211, 211, 0.5)), url('photo-1447933601403-0c6688de566e.jpeg'); /* Path to your image */
+    background-image: linear-gradient(rgba(132, 70, 36, 0.6), rgba(132, 70, 36, 0.6)), url('photo-1447933601403-0c6688de566e.jpeg'); /* Path to your image */
     background-size: cover;                /* Make the image cover the entire area */
     background-position: center;           /* Center the image */
     background-repeat: no-repeat;          /* Prevent repetition */
     background-attachment: fixed;
+
 }
 
 footer iframe {
