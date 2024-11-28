@@ -19,10 +19,16 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px 40px;
-    background-color: #3e2723;
+    background-image:  url('photo-1447933601403-0c6688de566e.jpeg');
+
+    background-size: cover;                /* Make the image cover the entire area */
+    background-position: center;           /* Center the image */
+    background-repeat: no-repeat;          /* Prevent repetition */
+    background-attachment: fixed;
     color: #fff;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 header .logo {
@@ -45,10 +51,12 @@ header nav a {
 
 header nav a:hover,
 header nav .active {
-    background-color: #d2691e;
+   background-color: rgb(210, 105, 30);
     border-radius: 10px;
     color: #fff;
     padding: 10px 15px;
+
+
 
 }
 aside{
@@ -77,7 +85,7 @@ aside{
 }
 
 .sidebar .menu-item:hover {
-    background-color: #d2691e;
+    background-color: rgb(210, 105, 30);
 }
 
 /* Content Section */
@@ -130,12 +138,16 @@ footer {
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-    background-color: #3e2723;
+    background-image:  url('photo-1447933601403-0c6688de566e.jpeg'); /* Path to your image */
+    background-size: cover;                /* Make the image cover the entire area */
+    background-position: center;           /* Center the image */
+    background-repeat: no-repeat;          /* Prevent repetition */
+    background-attachment: fixed;          /* Keep the image fixed when scrolling */
     color: #fff;
     text-align: center;
     flex-wrap: wrap;
+    position: relative;
     z-index: 100;
-
 }
 
 footer .footer-item {
@@ -149,7 +161,11 @@ footer .footer-item {
     border-radius: 10px;
     padding: 20px;
     z-index: 10;
-
+    background-image: linear-gradient(rgba(211, 211, 211, 0.5), rgba(211, 211, 211, 0.5)), url('photo-1447933601403-0c6688de566e.jpeg'); /* Path to your image */
+    background-size: cover;                /* Make the image cover the entire area */
+    background-position: center;           /* Center the image */
+    background-repeat: no-repeat;          /* Prevent repetition */
+    background-attachment: fixed;
 }
 
 footer iframe {
