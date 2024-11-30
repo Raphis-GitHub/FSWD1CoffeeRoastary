@@ -8,7 +8,7 @@
 /* Body Styling */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to bottom, #f4f1ea, #c4a484);
+    background: linear-gradient(to bottom, #c4a484, #3e2723);
     color: #3e2723;
     min-height: 100vh;
 }
@@ -182,6 +182,15 @@ footer input {
     border-radius: 5px;
     border: 1px solid #d2691e;
 }
+
+#about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+    line-height: 25px;
+}
+
 .contact-form {
     text-align: center;
     padding: 20px;
