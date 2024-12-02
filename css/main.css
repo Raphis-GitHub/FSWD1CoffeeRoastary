@@ -22,7 +22,7 @@ header {
     justify-content: space-between;
     flex-wrap: wrap; /* Makes items wrap on smaller screens */
     padding: 20px 40px;
-    background-image: url('photo-1447933601403-0c6688de566e.jpeg');
+    background-image: url('Header-Footer\ Background.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -41,7 +41,7 @@ header h1 {
     font-family: "Meow Script", cursive;
     font-size: 48px;
     font-weight: bold;
-    margin-left: 5px;
+    margin-left: 7px;
     margin-right: 7px;
     text-align: center;
     flex: 1; /* Centers the title */
@@ -198,7 +198,7 @@ footer {
     justify-content: space-around;
     align-items: stretch;
     padding: 20px;
-    background-image:  url('photo-1447933601403-0c6688de566e.jpeg'); /* Path to your image */
+    background-image:  url('Header-Footer\ Background.jpeg'); /* Path to your image */
     background-size: cover;                /* Make the image cover the entire area */
     background-position: center;           /* Center the image */
     background-repeat: no-repeat;          /* Prevent repetition */
@@ -221,7 +221,7 @@ footer .footer-item {
     border-radius: 10px;
     padding: 20px;
     z-index: 10;
-    background-image: linear-gradient(rgba(132, 70, 36, 0.6), rgba(132, 70, 36, 0.6)), url('photo-1447933601403-0c6688de566e.jpeg'); /* Path to your image */
+    background-image: linear-gradient(rgba(132, 70, 36, 0.6), rgba(132, 70, 36, 0.6)), url('Header-Footer\ Background.jpeg'); /* Path to your image */
     background-size: cover;                /* Make the image cover the entire area */
     background-position: center;           /* Center the image */
     background-repeat: no-repeat;          /* Prevent repetition */
