@@ -33,12 +33,27 @@
 
 .roastery-description {
     display: inline-block;
-    flex: 3;
+    flex: 3 3;
     background-color: brown;
     color: white;
     border-radius: 10px;
     text-align: left; /* Keeps text aligned left */
+    font-size: 1em;
     padding: 20px; /* Adds some space around the text */
+    overflow-y: scroll;
+    max-height: 92px;
+}
+
+@media (max-width: 600px) {
+    .roastery-type img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 500px) {
+    .roastery-description {
+        font-size: 0.7em;
+    }
 }
 
 /* Reverses the flex order for alternate rows */

@@ -12,10 +12,12 @@ body {
     color: #3e2723;
     min-height: 100vh;
 }
+
 .logo img {
     width: 125px; /* Adjust size */
     height: auto; /* Maintain aspect ratio */
 }
+
 header {
     display: flex;
     align-items: center;
@@ -109,8 +111,8 @@ aside{
 
 @media (max-width: 950px) {
     .sidebar {
-        position: sticky;
-        top: 444px;
+        position: relative;
+        top: 76px;
     }
 }
 
@@ -118,6 +120,7 @@ aside{
     width: 20%;
     left: 20px;
     margin-bottom: 20px;
+    min-width: 100px;
     display: inline-block;
     background-color: #3e2723;
     color: #fff;
@@ -140,8 +143,14 @@ aside{
 
 /* Content Section */
 .content {
-    margin-top: -189px;
+    margin-top: -285px;
     margin-left: 25%;
+}
+
+@media (max-width: 442px) {
+    .content {
+        margin-left: 120px;
+    }
 }
 
 .content h2 {  

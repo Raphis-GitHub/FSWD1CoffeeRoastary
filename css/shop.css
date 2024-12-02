@@ -7,44 +7,18 @@
     min-width: 100px;
 }
 
-@media only screen and (min-width: 1200px) {
-    .grid-container {
-        display: grid;
-        width: 90%;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 20px 20px;
-    }
-}
-
-@media only screen and (max-width: 1200px) and (min-width: 950px) {
-    .grid-container {
-        display: grid;
-        width: 90%;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 20px 20px;
-    }
-}
-
-@media only screen and (max-width: 950px) and (min-width: 660px) {
-    .grid-container {
-        display: grid;
-        width: 90%;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 20px 20px;
-    }
-}
-
-@media only screen and (max-width: 660px) {
-    .grid-container {
-        display: grid;
-        width: 90%;
-        grid-template-columns: 1fr;
-        grid-gap: 20px 20px;
-        justify-content: center;
-    }
+.grid-container {
+    display: grid;
+    width: 90%;
+    grid-gap: 20px 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center; /* Optional, ensures alignment for single-column layouts */
 }
 
 .shop-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     min-width: 100px;
     background-color: #fff;
     border-radius: 10px;
@@ -66,6 +40,7 @@
 
 .shop-card h3 {
     text-align: center;
+    font-size: 1.5em;
 }
 
 .shop-card p {
@@ -73,6 +48,11 @@
     font-size: 18px;
     text-align: center;
     color: #3e2723;
+}
+
+.shop-card ul {
+    flex-grow: 1;
+    margin: 10px 0;
 }
 
 .shop-card ul li {
@@ -86,6 +66,9 @@
 }
 
 .buy-form {
+    margin-top: auto;
+    align-self: stretch;
+    width: 100%;
     text-align: center;
     margin: 20px auto;
 }
