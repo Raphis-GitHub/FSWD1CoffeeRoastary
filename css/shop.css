@@ -75,6 +75,11 @@
     color: #3e2723;
 }
 
+.shop-card ul li {
+    text-align: center;
+    font-size: 1.4em;
+}
+
 .shop-card span {
     color: #d2691e;
     font-weight: bold;
@@ -87,6 +92,7 @@
 
 .buy-form button {
     width: 50%;
+    font-size: large;
     padding: 10px 20px;
     background-color: #d2691e;
     color: #fff;

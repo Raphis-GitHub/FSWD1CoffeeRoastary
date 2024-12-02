@@ -1,0 +1,54 @@
+header {
+    position: relative;
+}
+
+.coffee-table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-size: 1rem;
+    text-align: left;
+    background-color: #fff7e6;
+    border-radius: 8px;
+    overflow: hidden;
+}
+  
+.coffee-table th, .coffee-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+  
+.coffee-table tr:nth-child(even) {
+    background-color: #ffe5cc;
+}
+  
+.coffee-table th {
+    background-color: #6b4f31;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 500px) {
+    .coffee-table {
+        font-size: 0.9rem;
+    }
+
+    .coffee-table th {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .coffee-table {
+        font-size: 0.7rem;
+    }
+
+    .coffee-table th {
+        font-size: 0.7rem;
+    }
+
+    .coffee-table th, .coffee-table td {
+        padding: 6px;
+    }
+}

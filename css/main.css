@@ -192,6 +192,19 @@ aside{
     font-weight: bold;
 }
 
+.videos {
+    margin-top: 30px;
+    margin-left: 25%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.videos h2 {
+    text-align: center;
+    color: white;
+}
+
 /* Footer */
 footer {
     display: flex;
@@ -226,7 +239,7 @@ footer .footer-item {
     background-position: center;           /* Center the image */
     background-repeat: no-repeat;          /* Prevent repetition */
     background-attachment: fixed;
-
+    min-height: 100px;
 }
 
 footer iframe {

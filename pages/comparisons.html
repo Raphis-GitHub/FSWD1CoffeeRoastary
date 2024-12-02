@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Coffee Roastery</title>
   <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/comparisons.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Meow+Script&display=swap">
@@ -17,89 +18,103 @@
   </div>
   <h1>The Coffee Roastery</h1>
   <nav>
-    <span><a class="active" href="main.html">Home</a></span>
+    <span><a href="main.html">Home</a></span>
     <span><a href="shop.html">Shop</a></span>
     <span><a href="roastery.html">Roastery</a></span>
-    <span><a href="comparisons.html">Coffee Comparisons</a></span>
+    <span><a class="active" href="comparisons.html">Coffee Comparisons</a></span>
   </nav>
 
 </header>
 
 <!-- Main Section -->
 <main>
-  <!-- Left Sidebar -->
-  <aside class="sidebar">
-    <div class="menu-item"> espresso</div>
-    <div class="menu-item"> latte</div>
-    <div class="menu-item"> lungo</div>
-    <div class ="menu-item"> decaf</div>
-  </aside>
-
   <!-- Content Section -->
-
-  <section class="content">
-    <div class="card">
-      <img src="../images/Coffee Cup.jpeg" alt="Coffee">
-      <p>Lorem ipsum dolor sit <span>amet</span></p>
-    </div>
-    <div class="card">
-      <img src="../images/Coffee Cup.jpeg" alt="Coffee">
-      <p>Lorem ipsum dolor sit <span>amet</span></p>
-    </div>
-    <div class="card">
-      <img src="../images/Coffee Cup.jpeg" alt="Coffee">
-      <p>Lorem ipsum dolor sit <span>amet</span></p>
-    </div>
-    <div class="card">
-      <img src="../images/Coffee Cup.jpeg" alt="Coffee">
-      <p>Lorem ipsum dolor sit <span>amet</span></p>
-    </div>
-    <div class="card">
-      <img src="../images/Coffee Cup.jpeg" alt="Coffee">
-      <p>Lorem ipsum dolor sit <span>amet</span></p>
-    </div>
-    <div class="card">
-      <img src="../images/Coffee Cup.jpeg" alt="Coffee">
-      <p>Lorem ipsum dolor sit <span>amet</span></p>
-    </div>
-    <div class="card">
-      <img src="../images/Coffee Cup.jpeg" alt="Coffee">
-      <p>Lorem ipsum dolor sit <span>amet</span></p>
-    </div>
-    <div class="card">
-      <img src="../images/Coffee Cup.jpeg" alt="Coffee">
-      <p>Lorem ipsum dolor sit <span>amet</span></p>
-    </div>
-    <div class="card">
-      <img src="../images/Coffee Cup.jpeg" alt="Coffee">
-      <p>Lorem ipsum dolor sit <span>amet</span></p>
-    </div>
-    <div class="card">
-      <img src="../images/Coffee Cup.jpeg" alt="Coffee">
-      <p>Lorem ipsum dolor sit <span>amet</span></p>
-    </div>
-    <div class="card">
-      <img src="../images/Coffee Cup.jpeg" alt="Coffee">
-      <p>Lorem ipsum dolor sit <span>amet</span></p>
-    </div>
-    <div class="card">
-      <img src="../images/Coffee Cup.jpeg" alt="Coffee">
-      <p>Lorem ipsum dolor sit <span>amet</span></p>
-    </div>
-  </section>
-
-  <section class="videos">
-    <h2>Learn How We Brew Perfection</h2>
-    <div class="video-container">
-      <video controls width="560" height="315">
-        <source src="#" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <video controls width="560" height="315">
-        <source src="#" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
+  <section class="comparisons">
+    <table class="coffee-table">
+        <thead>
+          <tr>
+            <th>Coffee Type</th>
+            <th>Flavor Profile</th>
+            <th>Caffeine Content</th>
+            <th>Best Time to Drink</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Espresso</td>
+            <td>Rich, bold</td>
+            <td>High</td>
+            <td>Morning</td>
+          </tr>
+          <tr>
+            <td>Latte</td>
+            <td>Milky, smooth</td>
+            <td>Medium</td>
+            <td>Afternoon</td>
+          </tr>
+          <tr>
+            <td>Cappuccino</td>
+            <td>Frothy, balanced</td>
+            <td>Medium</td>
+            <td>Brunch</td>
+          </tr>
+          <tr>
+            <td>Americano</td>
+            <td>Smooth, diluted</td>
+            <td>Medium</td>
+            <td>All day</td>
+          </tr>
+          <tr>
+            <td>Flat White</td>
+            <td>Velvety, creamy</td>
+            <td>Medium</td>
+            <td>Afternoon</td>
+          </tr>
+          <tr>
+            <td>Mocha</td>
+            <td>Chocolatey, sweet</td>
+            <td>Low</td>
+            <td>Evening</td>
+          </tr>
+          <tr>
+            <td>Macchiato</td>
+            <td>Strong, intense</td>
+            <td>High</td>
+            <td>Morning</td>
+          </tr>
+          <tr>
+            <td>Ristretto</td>
+            <td>Rich, concentrated</td>
+            <td>Very High</td>
+            <td>Morning</td>
+          </tr>
+          <tr>
+            <td>Affogato</td>
+            <td>Sweet, dessert-like</td>
+            <td>Low</td>
+            <td>Evening</td>
+          </tr>
+          <tr>
+            <td>Irish Coffee</td>
+            <td>Sweet, boozy</td>
+            <td>Medium</td>
+            <td>Evening</td>
+          </tr>
+          <tr>
+            <td>Cold Brew</td>
+            <td>Smooth, refreshing</td>
+            <td>High</td>
+            <td>Afternoon</td>
+          </tr>
+          <tr>
+            <td>Turkish Coffee</td>
+            <td>Rich, spiced</td>
+            <td>High</td>
+            <td>All day</td>
+          </tr>
+        </tbody>
+      </table>
+      
   </section>
 </main>
 
