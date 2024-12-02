@@ -22,7 +22,7 @@ header {
     justify-content: space-between;
     flex-wrap: wrap; /* Makes items wrap on smaller screens */
     padding: 20px 40px;
-    background-image: url('Header-Footer\ Background.jpeg');
+    background-image: url('../images/Header-Footer\ Background.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -198,7 +198,7 @@ footer {
     justify-content: space-around;
     align-items: stretch;
     padding: 20px;
-    background-image:  url('Header-Footer\ Background.jpeg'); /* Path to your image */
+    background-image:  url('../images/Header-Footer\ Background.jpeg'); /* Path to your image */
     background-size: cover;                /* Make the image cover the entire area */
     background-position: center;           /* Center the image */
     background-repeat: no-repeat;          /* Prevent repetition */
@@ -221,7 +221,7 @@ footer .footer-item {
     border-radius: 10px;
     padding: 20px;
     z-index: 10;
-    background-image: linear-gradient(rgba(132, 70, 36, 0.6), rgba(132, 70, 36, 0.6)), url('Header-Footer\ Background.jpeg'); /* Path to your image */
+    background-image: linear-gradient(rgba(132, 70, 36, 0.6), rgba(132, 70, 36, 0.6)), url('../images/Header-Footer\ Background.jpeg'); /* Path to your image */
     background-size: cover;                /* Make the image cover the entire area */
     background-position: center;           /* Center the image */
     background-repeat: no-repeat;          /* Prevent repetition */
@@ -245,12 +245,19 @@ footer input {
     border: 1px solid #d2691e;
 }
 
+@font-face {
+    font-family: PlayfairDisplay;
+    src: url("../fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf") format("truetype");
+}
+
 #about-us {
+    font-family: "PlayfairDisplay", "Arial";
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 5% 5%;
     line-height: 25px;
+    text-align: justify;
 }
 
 #contact-us {
