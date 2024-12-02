@@ -52,3 +52,39 @@ header {
         padding: 6px;
     }
 }
+
+.videos {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.videos h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+@media (min-width: 750px) {
+    video {
+        width: 40%;
+        height: auto;
+    }
+}
+
+@media (max-width: 750px) {
+    video {
+        justify-self: center;
+        width: 80%;
+        height: auto;
+    }
+}

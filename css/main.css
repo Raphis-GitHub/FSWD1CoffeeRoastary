@@ -72,7 +72,7 @@ header nav .active {
 }
 
 /* Media Query for Smaller Screens */
-@media (max-width: 750px) {
+@media (max-width: 950px) {
     header {
         flex-direction: column; /* Stack items vertically */
         text-align: center;
@@ -100,38 +100,24 @@ aside{
 
 /* Sidebar */
 
-@media (min-width: 776px) {
+@media (min-width: 950px) {
     .sidebar {
         position: sticky;
         top: 195px;
     }
 }
 
-@media (max-width: 776px) {
+@media (max-width: 950px) {
     .sidebar {
         position: sticky;
         top: 444px;
     }
 }
 
-@media (min-width: 750px) and (max-width: 776px) {
-    .sidebar {
-        position: sticky;
-        top: 240px;
-    }
-}
-
-@media (max-width: 440px) {
-    .sidebar {
-        position: sticky;
-        top: 420px;
-    }
-}
-
 .sidebar {
     width: 20%;
     left: 20px;
-    margin-bottom: 413px;
+    margin-bottom: 20px;
     display: inline-block;
     background-color: #3e2723;
     color: #fff;
@@ -154,7 +140,7 @@ aside{
 
 /* Content Section */
 .content {
-    margin-top: -582px;
+    margin-top: -189px;
     margin-left: 25%;
 }
 
@@ -202,46 +188,6 @@ aside{
 .card span {
     color: #d2691e;
     font-weight: bold;
-}
-
-.videos {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    overflow: hidden;
-    z-index: 1;
-}
-
-.videos h2 {
-    text-align: center;
-    color: white;
-    margin-bottom: 20px;
-}
-
-.video-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-@media (min-width: 750px) {
-    video {
-        width: 40%;
-        height: auto;
-    }
-}
-
-@media (max-width: 750px) {
-    .video-container {
-        gap: 0;
-    }
-
-    video {
-        justify-self: center;
-        width: 80%;
-        height: auto;
-    }
 }
 
 /* Footer */
