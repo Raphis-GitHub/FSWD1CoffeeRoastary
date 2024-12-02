@@ -110,7 +110,7 @@ aside{
 @media (max-width: 776px) {
     .sidebar {
         position: sticky;
-        top: 364px;
+        top: 444px;
     }
 }
 
@@ -131,7 +131,7 @@ aside{
 .sidebar {
     width: 20%;
     left: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 413px;
     display: inline-block;
     background-color: #3e2723;
     color: #fff;
@@ -154,8 +154,16 @@ aside{
 
 /* Content Section */
 .content {
-    margin-top: -213px;
+    margin-top: -582px;
     margin-left: 25%;
+}
+
+.content h2 {  
+    text-align: center;
+    color: white;
+}
+
+.card-holder {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -198,15 +206,26 @@ aside{
 
 .videos {
     margin-top: 30px;
-    margin-left: 25%;
     margin-bottom: 20px;
     border-radius: 10px;
     overflow: hidden;
+    z-index: 1;
 }
 
 .videos h2 {
     text-align: center;
     color: white;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+video {
+    flex: 1;
 }
 
 /* Footer */
