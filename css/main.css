@@ -272,7 +272,6 @@ footer input {
     text-align: center;
     padding: 20px;
     background-color: #f4f1ea;
-    margin: 20px auto;
     border-radius: 10px;
     max-width: 600px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -295,6 +294,10 @@ footer input {
     padding: 10px;
     border: 1px solid #d2691e;
     border-radius: 5px;
+}
+
+.contact-form textarea {
+    max-width: 100%;
 }
 
 .contact-form button {
