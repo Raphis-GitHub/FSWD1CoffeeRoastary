@@ -82,8 +82,12 @@ header {
 }
 
 @media (max-width: 750px) {
+    .video-container {
+        display: inline;
+    }
+
     video {
-        justify-self: center;
+        margin-left: 10%;
         width: 80%;
         height: auto;
     }

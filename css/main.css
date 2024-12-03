@@ -13,11 +13,7 @@ body {
     min-height: 100vh;
 }
 
-.logo img {
-    width: 125px; /* Adjust size */
-    height: auto; /* Maintain aspect ratio */
-}
-
+/* Header */
 header {
     display: flex;
     align-items: center;
@@ -31,26 +27,21 @@ header {
     color: #fff;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 10;
     max-height: 118px;
 }
 
-header .logo {
-    font-size: 24px;
+.logo img {
+    width: 125px; /* Adjust size */
+    height: auto; /* Maintain aspect ratio */
 }
 
 header h1 {
     font-family: "Meow Script", cursive;
     font-size: 48px;
     font-weight: bold;
-    margin-left: 7px;
-    margin-right: 7px;
     text-align: center;
     flex: 1; /* Centers the title */
-}
-
-.navi {
-    margin: 0 15px; /* Consistent spacing */
 }
 
 header nav {
@@ -95,12 +86,48 @@ header nav .active {
     }
 }
 
+@media (max-width: 436px) {
+    .logo img {
+        width: 75px; /* Adjust size */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    header nav {
+        display: grid;
+        width: 100%;
+        height: 45px;
+        grid-template-areas: 
+        "nav1 nav2"
+        "nav3 nav4";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    header nav span:nth-child(1) {
+        grid-area: nav1;
+    }
+    header nav span:nth-child(2) {
+        grid-area: nav2;
+    }
+    header nav span:nth-child(3) {
+        grid-area: nav3;
+    }
+    header nav span:nth-child(4) {
+        grid-area: nav4;
+    }
+}
+
+
+/* Sidebar */
 aside{
     z-index: 0;
 
 }
-
-/* Sidebar */
 
 @media (min-width: 950px) {
     .sidebar {
@@ -140,6 +167,7 @@ aside{
 .sidebar .menu-item:hover {
     background-color: rgb(210, 105, 30);
 }
+
 
 /* Content Section */
 .content {
@@ -198,6 +226,7 @@ aside{
     color: #d2691e;
     font-weight: bold;
 }
+
 
 /* Footer */
 footer {

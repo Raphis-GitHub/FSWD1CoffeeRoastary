@@ -47,11 +47,6 @@
     overflow-y: auto;
 }
 
-/* Reverse the flex order for alternate rows */
-.roastery-item.reversed {
-    flex-direction: row-reverse;
-}
-
 /* Medium Devices (Tablets and Small Desktops) */
 @media (max-width: 768px) {
     .grid-container {
@@ -67,6 +62,7 @@
     .roastery-description {
         font-size: 0.9em; /* Reduce text size slightly */
         max-height: none; /* Remove height restrictions */
+        margin-bottom: 20px;
     }
 
     .roastery-type img {
